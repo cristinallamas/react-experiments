@@ -1,9 +1,7 @@
+import Container from './containers/Container';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Container />, document.getElementById('root'));
+/* eslint-disable */
