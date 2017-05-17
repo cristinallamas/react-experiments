@@ -2,28 +2,28 @@ import React, {Component} from 'react';
 
 export default class Band extends Component{
 
-  constructor(){
-    super();
-
-  }
+  // constructor(){
+  //   super();
+  // //
+  // //
+  // 'name':this.props.band.name;
+  // }
 
 
   render(){
 
-    console.log(this.props.bandList);
+    console.log(this.props);
+    console.log(this.props.band.name);
 
 
     return(
-      <div>
-      {this.props.bandList.map((band, i) => {
-        return (
-          <li key={i}>{band.name}</li>
-        );
-      })}
-      </div>
-
-
-
+      <li>{this.props.band.name}</li>
     );
+
+
   }
+
+
+
+
 }
